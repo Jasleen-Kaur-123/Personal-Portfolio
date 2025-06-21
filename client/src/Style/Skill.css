@@ -1,0 +1,331 @@
+.skill-section {
+  width: 100%;
+  min-height: 340px;
+  background: linear-gradient(120deg, #f6faff 60%, #e3f0fc 100%);
+  padding: 48px 0 56px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skill-heading {
+  color: #111;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  margin-top: 100px;
+  letter-spacing: 1px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .skill-section {
+    padding: 28px 0 32px 0;
+  }
+  .skill-heading {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  .skill-item {
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 54px;
+    max-height: 54px;
+    padding: 4px 2px 2px 2px;
+  }
+  .skill-img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 4px;
+  }
+  .skill-label {
+    font-size: 0.7rem;
+  }
+}
+.rolecard-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.rolecard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+  padding: 28px 22px 22px 22px;
+  min-width: 210px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  margin-bottom: 12px;
+}
+
+.rolecard:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.16);
+}
+
+.rolecard-title {
+  color: #1976d2;
+  font-size: 1.13rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.rolecard-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.rolecard-techtext {
+  color: #222;
+  font-size: 0.98rem;
+  font-weight: 600;
+  background: #e3f0fc;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin: 0 2px;
+}
+
+.rolecard-subtitle {
+  color: #3a3a3a;
+  font-size: 0.98rem;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .rolecard-row {
+    gap: 18px;
+    max-width: 98vw;
+  }
+  .rolecard {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 18px 8px 14px 8px;
+  }
+  .rolecard-title {
+    font-size: 1rem;
+  }
+  .rolecard-icon {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+  .rolecard-techtext {
+    font-size: 0.85rem;
+    padding: 1px 5px;
+  }
+  .rolecard-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .rolecard-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .rolecard {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 10px 4vw 10px 4vw;
+  }
+}
+
+.herocard-carousel {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.herocard-slide {
+  width: 100%;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: stretch;
+  transition: opacity 0.5s;
+}
+
+.herocard {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
+  padding: 48px 48px 38px 48px;
+  min-width: 320px;
+  max-width: 520px;
+  min-height: 50vh;
+  flex: 1 1 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #181c24;
+  margin-bottom: 12px;
+  border: 2px solid #e3f0fc;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.herocard-title {
+  color: #1976d2;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.herocard-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.herocard-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #f6faff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 1.5px 8px rgba(25, 118, 210, 0.04);
+}
+
+.herocard-techtext {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #e3f0fc;
+  border-radius: 10px;
+  padding: 6px 18px;
+  margin: 0 2px;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.herocard-bullets {
+  margin: 0 0 0 24px;
+  padding: 0;
+  color: #181c24;
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 2.1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.herocard-bullets li {
+  margin-bottom: 0;
+  list-style: disc inside;
+}
+
+.herocard-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.herocard-dot {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+  border: 2px solid #1976d2;
+}
+
+.herocard-dot.active {
+  opacity: 1;
+  background: #1976d2;
+}
+
+@media (max-width: 1100px) {
+  .herocard-slide {
+    gap: 18px;
+  }
+  .herocard {
+    min-width: 220px;
+    max-width: 98vw;
+    padding: 18px 8px 14px 8px;
+    font-size: 1.05rem;
+    min-height: 36vh;
+  }
+  .herocard-title {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+  .herocard-icon {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
+  .herocard-techtext {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+  .herocard-bullets {
+    font-size: 1rem;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .herocard-slide {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .herocard {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 10px 4vw 10px 4vw;
+    font-size: 0.95rem;
+    min-height: 32vh;
+  }
+  .herocard-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .herocard-bullets {
+    font-size: 0.9rem;
+    gap: 6px;
+  }
+  .herocard-dots {
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .herocard-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
