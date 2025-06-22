@@ -2,6 +2,8 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require('path');
+require('dotenv').config(); // Load environment variables
+
 
 const app = express();
 const PORT = 5000;
@@ -18,14 +20,14 @@ app.post('/resume-download', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'jkaurdhillon51@gmail.com',
-        pass: 'zzsd jjga hinj ohzw' 
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
       }
     });
 
     const mailOptions = {
-      from: 'jkaurdhillon51@gmail.com',
-      to: 'jkaurdhillon51@gmail.com',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: '📥 Resume Downloaded',
       text: 'Someone downloaded your resume from your portfolio.'
     };

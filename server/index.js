@@ -2,6 +2,8 @@ const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config(); // Load environment variables
+
 
 const app = express();
 const PORT = 5000;
@@ -12,10 +14,10 @@ app.use(bodyParser.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'Root@123', 
-  database: 'personalportfoliodb',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
