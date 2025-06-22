@@ -75,7 +75,7 @@ const projects = [
       '🔗 It includes a contact form connected to the backend for direct communication.'
     ],
     tech: ['Html', 'Css', 'Javascript', 'React', 'Node', 'Express', 'MySql'],
-    live: '#',
+    live: 'https://my-personal-portfolio-tech.netlify.app/',
     github: 'https://github.com/Jasleen-Kaur-123/Personal-Portfolio',
     disableLive: false
   },
